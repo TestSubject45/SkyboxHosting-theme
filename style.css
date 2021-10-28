@@ -41,6 +41,7 @@ h5,h6, p{
 
 /*Menu*/
 header#header{
+	z-index:0;
 	position:fixed;
 	top:0px;
 	left:0px;
@@ -83,6 +84,7 @@ header#header div#branding div#site-title h1 a{
 
 /*Banner Image*/
 .banner-image img{
+	z-index:-1;
 	max-width:100vw;
 	max-height:400px;
 	object-fit:cover;
