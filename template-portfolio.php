@@ -1,19 +1,16 @@
 <?php /* Template Name: Portfolio */ ?>
 
 <?php get_header(); ?>
-<!-- Display Nav -->
-<?php get_template_part( 'nav', 'below' ); ?>
-<main id="content">
+<main id="content" role="main">
+	
 <!-- Page Title -->
-<h1 class="entry-title"><?php the_title(); ?></h1> 
-<!-- Page Content -->
-    <?php
-    while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
-            <?php the_content(); ?> <!-- Page Content -->
-
-    <?php
-    endwhile; //resetting the page loop
-    wp_reset_query(); //resetting the page query
-    ?>
+<header class="header">
+	<h1 class="entry-title">	
+		<?php the_title(); ?>
+	</h1>
+</header>
+<!-- End Title -->
+	
+<?php get_template_part( 'nav', 'below' ); ?>
 </main>
 <?php get_footer(); ?>
