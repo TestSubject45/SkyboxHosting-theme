@@ -6,7 +6,7 @@ Primary Branch: main
 Author: Gambel Labs
 Author URI: https://blakegambel.com/
 Description: Custom theme for SkyboxHosting.com
-Version: 0.0.4
+Version: 0.0.5
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl.html
 Tags: 
@@ -42,7 +42,7 @@ h5,h6, p{
 
 /*Menu*/
 header#header{
-	z-index:0;
+	z-index:1;
 	position:fixed;
 	top:0px;
 	left:0px;
